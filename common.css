@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+a:visited, a {
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    color: #EEE;
+    background-color: #335;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #224;
+    padding: 12px;
+}
+
+nav > a {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+main {
+    margin-top: 55px;
+    margin-left: 12px;
+    width: calc(100% - 12px);
+    height: calc(100% - 55px);
+}
+
+.sortIndex {
+    font-weight: bold;
+}
+
+table, th, td {
+    font-weight: normal;
+    border: 2px solid #99A;
+    border-collapse: collapse;
+    /* margin: 12px; */
+}
+
+tr>th:first-child, tr>td:first-child {
+    width: 1px;
+}
+
+tr>th:nth-child(2), tr>td:nth-child(2) {
+    /* max-width: 200px; */
+}
+
+tr:nth-child(odd) {
+    background-color: #224;
+}
+
+tr:first-child {
+    background-color: #113;
+}
+
+button {
+    background-color: #123;
+    color: #FEE;
+    width: 65px;
+}
+
+tr.read input, tr.read select, tr.read button.update {
+    display: none;
+}
+
+tr.write span, tr.write button.delete {
+    display: none;
+}
+
+th>form {
+    display: none;
+}
+
+th.write>form {
+    display: inline;
+}
+
+th.write>button {
+    display: none;
+}
+
+th.delete>form {
+    display: inline;
+}
+
+img {
+    max-width: 250px;
+}
+
+[title] {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
